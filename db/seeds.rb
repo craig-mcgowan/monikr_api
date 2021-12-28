@@ -12,7 +12,7 @@ user = User.create(username: "craigmcg", password: "pineapple", expecting: true,
   Favorite.create(
     user_id: 1,
     name: Faker::Name.female_first_name,
-    origin: Faker::Adress.country,
+    origin: Faker::Address.country,
     gender: "female",
     top_choice: false
   )
