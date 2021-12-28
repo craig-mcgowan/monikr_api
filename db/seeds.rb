@@ -7,3 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 user = User.create(username: "craigmcg", password: "pineapple", expecting: true, baby_gender: "girl", theme: "pink", partner_id: 2)
+
+10.times do
+  Favorite.create(
+    user_id: 1,
+    name: Faker::female_first_name,
+    origin: Faker::Adress.country,
+    gender: "female",
+    top_choice: false
+  )
+end
