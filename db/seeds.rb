@@ -11,7 +11,7 @@ user = User.create(username: "craigmcg", password: "pineapple", expecting: true,
 10.times do
   Favorite.create(
     user_id: 1,
-    name: Faker::female_first_name,
+    name: Faker::Name.female_first_name,
     origin: Faker::Adress.country,
     gender: "female",
     top_choice: false
