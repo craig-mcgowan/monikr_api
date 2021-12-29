@@ -4,7 +4,7 @@ class FavoritesController < ApplicationController
 
   # GET /favorites
   def index
-    # @favorites = Favorite.where(user_id: @user.id)
+    @favorites = Favorite.where(user_id: 1)
 
     render json: @favorites
   end
